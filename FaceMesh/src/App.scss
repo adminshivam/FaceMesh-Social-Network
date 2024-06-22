@@ -1,5 +1,7 @@
 .App {
-  display: block;
+  display: flex;
+  border: 10px solid purple;
+  min-height: 100vh;
 }
 
 body {

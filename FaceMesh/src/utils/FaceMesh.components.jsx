@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, Input } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { blue } from "@mui/material/colors";
 import {
@@ -8,6 +8,17 @@ import {
   Message as MessageIcon,
 } from "@mui/icons-material";
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
+
+export const FaceMeshInputComponent = styled(Input)(({ theme }) => ({
+  // backgroundColor: blue["A400"],
+  padding: "10px 10px",
+  margin: "5% 5%",
+  border: "1px solid black",
+  borderRadius: 10,
+  "&:hover": {
+    border: "1px solid blue",
+  },
+}));
 
 export const FaceMeshToolBarButtonComponent = styled(ArrowDropDownCircleIcon)(
   ({ theme }) => ({
