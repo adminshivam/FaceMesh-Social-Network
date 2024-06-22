@@ -1,0 +1,30 @@
+@import "../../utils/constants.scss";
+
+.AppBar {
+  position: static; /* Set position to static */
+  background-color: white;
+  padding: 5px;
+  border-color: $faceMesh-color-blue;
+  border-radius: 16px; /* Rounded corners */
+}
+
+.ToolBar {
+  position: static; /* Set position to static */
+  box-shadow: 1px 1px 25px 1px black;
+  background-color: $faceMesh-color-white;
+  border-color: $faceMesh-color-blue;
+  padding: 20px;
+  border-radius: 16px; /* Rounded corners */
+}
+
+.ToolBarComponent {
+  display: inline-flex;
+  align-items: center; /* Align items vertically */
+  min-height: 48px;
+  background-color: $faceMesh-color-blue;
+  border: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  min-height: 1em;
+}

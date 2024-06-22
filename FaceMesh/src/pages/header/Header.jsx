@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 import {
   AppBar,
   Toolbar,
@@ -7,6 +7,8 @@ import {
   InputBase,
   Avatar,
   colors,
+  ButtonBase,
+  Button,
 } from "@mui/material";
 import {
   Search as SearchIcon,
@@ -17,13 +19,18 @@ import {
 
 function Header() {
   return (
-    <AppBar position="static">
-      <Toolbar className={styles.toolbar}>
-        <IconButton>
-          <HomeIcon />
-        </IconButton>
-      </Toolbar>
-    </AppBar>
+    <div>
+      <AppBar position="static" className={styles.AppBar}>
+        <Toolbar className={styles.ToolBar}>
+          <IconButton className={styles.ToolBarComponent}>
+            <HomeIcon className={styles.ToolBarComponent} />
+          </IconButton>
+          <Button variant="contained" className={styles.ToolBarComponent}>
+            Hey
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </div>
   );
 }
 
