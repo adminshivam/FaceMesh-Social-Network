@@ -5,7 +5,7 @@ import * as styles from "./App.scss";
 
 function App() {
   return (
-    <div className={styles.App}>
+    <div style={{ minHeight: "100vh", margin: "0" }} className={styles.App}>
       <AppRouter />
     </div>
   );

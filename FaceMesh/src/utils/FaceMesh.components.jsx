@@ -18,6 +18,7 @@ export const FaceMeshInputComponent = styled(Input)(({ theme }) => ({
   "&:hover": {
     border: "1px solid blue",
   },
+  fontSize: "1.25vw",
 }));
 
 export const FaceMeshToolBarButtonComponent = styled(ArrowDropDownCircleIcon)(
@@ -54,4 +55,11 @@ export const FaceMeshToolBarIconComponent = styled(Home)(({ theme }) => ({
     cursor: "pointer",
     boxShadow: "0px 0px 5px 2px grey",
   },
+}));
+
+export const FaceMeshButtonComponent = styled(Button)(({ theme }) => ({
+  boxShadow: "none",
+  borderRadius: 10,
+  margin: 25,
+  fontSize: "1.25vw",
 }));

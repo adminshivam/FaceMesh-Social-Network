@@ -16,7 +16,7 @@ import {
 
 function Header() {
   return (
-    <div>
+    <div style={{ flexShrink: 0 }}>
       <AppBar position="static" className={styles.AppBar}>
         <Toolbar className={styles.ToolBar}>
           <FaceMeshToolBarIconComponent />

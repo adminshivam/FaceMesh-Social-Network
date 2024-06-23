@@ -3,7 +3,10 @@ import styles from "./Login.module.scss";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { Input } from "@mui/material";
-import { FaceMeshInputComponent } from "../utils/FaceMesh.components";
+import {
+  FaceMeshInputComponent,
+  FaceMeshButtonComponent,
+} from "../utils/FaceMesh.components";
 
 const LoginComponent = () => {
   const [flexDirection, setFlexDirection] = useState("row");
@@ -23,9 +26,7 @@ const LoginComponent = () => {
   }, []);
 
   return (
-    <Box
-      sx={{ padding: "5% 10%", minHeight: "100%", border: "10px solid black" }}
-    >
+    <Box sx={{ padding: "5% 10%", minHeight: "100%" }}>
       <Box
         sx={{
           display: "flex",
@@ -66,12 +67,11 @@ const LoginComponent = () => {
           </Typography>
         </Box>
         <Box className={styles.innerLoginForm} sx={{ flexDirection: "column" }}>
-          <FaceMeshInputComponent placeholder="Email">
-            sfgf
-          </FaceMeshInputComponent>
-          <FaceMeshInputComponent placeholder="Password">
-            sfgf
-          </FaceMeshInputComponent>
+          <FaceMeshInputComponent placeholder="Email" />
+          <FaceMeshInputComponent placeholder="Password" type="password" />
+          <FaceMeshButtonComponent variant="contained" type="submit">
+            Submit
+          </FaceMeshButtonComponent>
         </Box>
       </Box>
     </Box>
